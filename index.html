@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="Image/logoe.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/6f0311b8f0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!---Header Section-->
+    
+    <section class="header">
+        
+        <nav>
+            <a href="index.html"><img src="Image/logo2.png" alt="Image Not Found"></a>
+            <div class="links" id="links">
+               
+                <i class="fa-sharp fa-solid fa-circle-xmark" onclick="showmenu()"></i>
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li> 
+                    <li><a href="#">COURSES</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">SIGN IN</a></li>
+                </ul>
+            </div>
+            <i class="fa-sharp fa-solid fa-bars" onclick="hidemenu()"></i>
+        </nav>
+        <div class="text">
+            <h1>World's Best University</h1>
+            <p>This is our University which have different Courses <br> and 10,000 + Alumni's</p>
+            <a href="" class="hero">Visit our University</a>
+        </div>
+    </section>
+    
+    <!---Course Section-->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>We have different types of courses that will definitely helpful to you...If you Need more information about </p>
+        <div class="row">
+            <div class="col">
+                <h3>Full Stack Development</h3>
+                <p>Full stack development refers to the end-to-end application software development, including the front end and back end. The front end consists of the user interface, and the back end takes care of the business logic and application workflows.</p>
+                <img class="image" src="Image/1_fsd.jpg">
+            </div>
+            <div class="col">
+                <h3>Java Oops</h3>
+                <p>Java is a high-level, class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.The main aim of object-oriented programming is to implement real-world entities.</p>
+                <img class="image" src="Image/2_java.png">
+            </div>
+            <div class="col">
+                <h3>Artificial Inteligence and Machine Learning</h3>
+                <p>Artificial intelligence is intelligence perceiving, synthesizing, and inferring information demonstrated by machines, as opposed to intelligence displayed by humans or by other animals.</p>
+                <img class="image" src="Image/3_ai.jpg">
+            </div>
+        </div>
+    </section>
+    <!---Campus Section-->
+    <section class="campus">
+        <h1>Campus that we have</h1>
+        <p>We have internatinal univerities also </p>
+        <div class="row">
+            <div class="camcol">
+                <img src="Image/london.jpg">
+            </div>
+        </div>
+
+
+
+    </section>
+    
+    
+    
+    
+    
+    <!---JavaScript Code for Toggle Menu-->
+    <script>
+        var links = document.getElementById("links");
+        function showmenu(){
+            links.style.right = "-200px";
+        }
+        function hidemenu(){
+            links.style.right = "0px";
+        }
+    </script>
+    
+</body>
+</html>
